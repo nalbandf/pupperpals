@@ -3,7 +3,7 @@ services:
   pupper_pals_db:
     image: postgres
     ports:
-      - "1200:5432"
+      - "5432:5432"
     environment:
       POSTGRES_PASSWORD: postgres
   pupper_pals_app:

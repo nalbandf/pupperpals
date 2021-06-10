@@ -11,4 +11,3 @@ WORKDIR /app
 # Copy .jar file (aka, builder)
 COPY --from=builder build/libs/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
-EXPOSE 8080
